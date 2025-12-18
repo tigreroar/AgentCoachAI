@@ -477,8 +477,8 @@ PERMANENT_KNOWLEDGE_BASE_IDS = [
 
 # ----------------- SIDEBAR -----------------
 with st.sidebar:
-    st.header("🧠 Lynn's Knowledge Base")
-    st.markdown("Lynn is connected to the AgentCoachAI Master Files via Google File Search.")
+    st.header("🧠 Agent Coach AI Knowledge Base")
+    st.markdown("Agent Coach Agent is connected to the AgentCoachAI Master Files via Google File Search.")
     
     st.markdown("---")
     if PERMANENT_KNOWLEDGE_BASE_IDS:
@@ -534,6 +534,7 @@ if prompt := st.chat_input("Start your coaching session..."):
         
     except Exception as e:
         st.error(f"An error occurred: {e}")
+
 
 
 
